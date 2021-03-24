@@ -8,7 +8,7 @@ import sesion.Session;
 
 import java.net.MalformedURLException;
 
-public class CalculadoraTes {
+public class CalculadoraTes extends  TestBase{
     MainScreen mainScreen = new MainScreen();
 
     @Test
@@ -24,8 +24,5 @@ public class CalculadoraTes {
 
     }
 
-    @After
-    public void closeApp() throws MalformedURLException {
-        Session.getInstance().closeSession();
-    }
+
 }
